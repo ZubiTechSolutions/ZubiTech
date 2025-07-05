@@ -1,40 +1,61 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background: #f4f4f4;
   color: #333;
 }
-
 header {
-  background-color: #004080;
+  background: #2c3e50;
   color: white;
-  padding: 20px;
+  padding: 1em;
   text-align: center;
 }
-
 nav {
-  background-color: #003366;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  background: #34495e;
+  padding: 0.5em;
+  text-align: center;
 }
-
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 1em;
   text-decoration: none;
+  font-weight: bold;
 }
-
 section {
-  padding: 20px;
+  padding: 2em;
 }
-
 .producto {
-  background-color: white;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 8px;
+  background: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+button {
+  padding: 0.5em 1em;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2ecc71;
+}
+#carrito {
+  background: #ecf0f1;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5px;
+}
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

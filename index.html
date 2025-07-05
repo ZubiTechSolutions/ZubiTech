@@ -2,18 +2,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TecniRed: soporte técnico, cursos de SAP y armado de PC, venta de componentes en Villa Celina, Villa Lugano y Carlos Spegazzini.">
-  <meta name="keywords" content="soporte IT, cursos SAP, reparación PC, venta componentes, armado PC">
-  <meta name="author" content="TecniRed">
-  <title>TecniRed - Soporte IT & Tecnología</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TecniRed: soporte técnico, cursos SAP, armado de PC y venta de componentes.">
+  <title>TecniRed - Soporte IT y Cursos</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>TecniRed</h1>
-    <p>Soporte técnico | Armado de PC | Cursos | Componentes</p>
+    <p>Soluciones IT, cursos y tecnología en un solo lugar</p>
   </header>
   <nav>
     <a href="#inicio">Inicio</a>
@@ -23,38 +22,48 @@
   </nav>
   <section id="inicio">
     <h2>Bienvenido a TecniRed</h2>
-    <p>Brindamos soluciones IT en Villa Celina, Villa Lugano y Carlos Spegazzini. Cursos, reparación, ventas y asesoramiento técnico con atención personalizada.</p>
+    <p>Ofrecemos soporte técnico, cursos SAP y armado de PC en Villa Celina, Lugano y Carlos Spegazzini.</p>
   </section>
   <section id="servicios">
     <h2>Servicios</h2>
     <ul>
-      <li>📘 Consultoría y cursos SAP</li>
-      <li>🛠 Reparación y armado de PC a medida</li>
-      <li>💽 Venta de componentes tecnológicos</li>
-      <li>🔧 Optimización, limpieza y formateo</li>
-      <li>📡 Configuración de redes domésticas</li>
+      <li>🔧 Reparación y armado de PC</li>
+      <li>💼 Consultoría y cursos SAP</li>
+      <li>🖥️ Venta de componentes</li>
+      <li>📡 Configuración de redes</li>
     </ul>
   </section>
   <section id="catalogo">
     <h2>Catálogo</h2>
     <div class="producto">
-      <h3>SSD Kingston 240GB</h3>
-      <p>$15.000 - Ideal para acelerar cualquier PC</p>
-      <a href="https://wa.me/541136208000?text=Hola%2C%20quiero%20comprar%20el%20SSD%20Kingston%20240GB" target="_blank">Pedir por WhatsApp</a>
+      <h3>Curso SAP MM</h3>
+      <p>Aprendé SAP desde cero. Ideal para el mercado laboral.</p>
+      <button onclick="agregarAlCarrito('Curso SAP MM')">Agregar al carrito</button>
     </div>
     <div class="producto">
-      <h3>Memoria RAM DDR4 8GB</h3>
-      <p>$18.000 - Compatible con la mayoría de motherboards modernas</p>
-      <a href="https://wa.me/541136208000?text=Hola%2C%20quiero%20comprar%20la%20RAM%20DDR4%208GB" target="_blank">Pedir por WhatsApp</a>
+      <h3>Curso Reparación de PC</h3>
+      <p>Convertite en técnico. Teoría y práctica completa.</p>
+      <button onclick="agregarAlCarrito('Curso Reparación de PC')">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <h3>SSD 240GB</h3>
+      <p>Velocidad para tu PC. Compatible con cualquier equipo.</p>
+      <button onclick="agregarAlCarrito('SSD 240GB')">Agregar al carrito</button>
+    </div>
+    <div id="carrito">
+      <h3>Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <a id="enviar-pedido" href="#" target="_blank">Enviar pedido por WhatsApp</a>
     </div>
   </section>
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📱 WhatsApp: <a href="https://wa.me/541136208000">11-3620-8000</a></p>
-    <p>✉️ Email: nombredelaempresa@dominio.com</p>
-    <p>📍 Zonas: Villa Celina / Villa Lugano / Carlos Spegazzini</p>
-    <p>🕒 Horarios: Lunes a Sábado, 10 a 19hs</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/541136208000" target="_blank">+54 11 3620 8000</a></p>
+    <p>📧 Email: <a href="mailto:nombredelaempresa@dominio.com">nombredelaempresa@dominio.com</a></p>
   </section>
+  <footer>
+    <p>&copy; 2025 TecniRed - Todos los derechos reservados</p>
+  </footer>
   <script src="scripts.js"></script>
 </body>
 </html>
